@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- navigation -->
+    <header>
+        <nav>
+            
+        <!-- Unordered list element-->
+        <ul>
+            <a class="title" href="#"><img src="img/logo.png"/></a>
+            <!-- List item element-->
+            <li>
+            <!-- Anchor element-->
+                <a class="title" href="#dinner">Get Dinner</a>
+            </li>
+            <li>
+                <a class="title" href= "#fav-meal">Favorite Meal</a>
+            </li>
+            <li>
+                <a class="title" href= "#fav-drink">Favorite Drink</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <div class="main">
+    <h1>
+      What are you in the mood for?
+  </h1>
+  <p>
+    Let's find a dinner for you tonight! Click Find Meal down below.
+  </p>
+</div>
+<main>
+    <h2 class="col-12">What do you want for dinner?</h2>
+    <div class="container text-center justify-content-center dinner hide" id="dinner">
+        <div class="col-5 card" id="meal"> 
+            <h2>Meal</h2>
+            <img id="meal-img"/>
+            <h3 id="meal-name"></h3>
+            <button type="button" class="btn btn-outline-primary btn-sm" id="favorite-meal-button">Favorite Meal</button>
+        </div>
+        <div class="col-5 card" id="drink">
+            <h2>Drink</h2>
+            <img id="drink-img"/>
+            <h3 id="drink-name"></h3>
+            <button type="button" class="btn btn-outline-primary btn-sm" id="favorite-drink-button">Favorite Drink</button>
+        </div>
+    </div>
+    <div class="container text-center justify-content-center">
+        <button type="button" class="col-2 btn btn-primary" id="dinner-btn">Get Dinner</button>
+    </div>
+
+    <div id="favorite-meal">
+        <h2>Favorite Meals</h2>
+        <ul id="favorite-meals"></ul>
+    </div>
+    <div id="favorite-drink">
+        <h2>Favorite Drinks</h2>
+        <ul id="favorite-drinks"></ul>
+    </div>
+</main>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
